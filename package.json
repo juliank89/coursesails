@@ -1,8 +1,8 @@
 {
-  "name": "foobar",
+  "name": "CourseSails",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "Curso Sails.js",
   "keywords": [],
   "dependencies": {
     "sails": "~0.11.0",
@@ -30,7 +30,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/foobar.git"
+    "url": "git+https://github.com/juliank89/coursesails.git"
   },
   "author": "anonymous node/sails user",
   "license": ""
