@@ -44,11 +44,11 @@ module.exports.sockets = {
   // -OR-
   //
 
-  adapter: 'socket.io-redis',
-  host: 'hammerjaw.redistogo.com',
-  port: 10469,
-  user: 'redistogo',
-  pass: '58ce75a4838f79b794034e3aa08a6c8c',
+  // adapter: 'socket.io-redis',
+  // host: 'hammerjaw.redistogo.com',
+  // port: 10469,
+  // user: 'redistogo',
+  // pass: '58ce75a4838f79b794034e3aa08a6c8c',
   // db: 'sails',
 
 

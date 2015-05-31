@@ -42,6 +42,11 @@ module.exports.routes = {
     action: 'handleLogin'
   },
 
+  'get /me':{
+    controller: 'UserController',
+    action:'whoami'
+  },
+
   'GET /:screenName': {
     controller: 'UserController',
     action: 'findOne'
