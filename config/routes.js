@@ -37,7 +37,7 @@ module.exports.routes = {
   //   action: 'findOne'
   // },
 
-  'get /': '/juliank89',
+  'get /': '/:screenName',
 
   'GET /twitter': {
     controller: 'TwitterController',
