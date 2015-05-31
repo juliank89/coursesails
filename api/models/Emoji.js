@@ -13,9 +13,6 @@ module.exports = {
   		type:'string'
   	},
 
-  	belongToUser: {
-  		type:'string'
-  	},
 
   	owner:{
   		type:'string'

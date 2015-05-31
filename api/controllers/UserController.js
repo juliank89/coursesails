@@ -18,13 +18,13 @@ module.exports = {
 
 		// Get the URL on twitter.com that a user should visit to allow/deny the specified Twitter Developer app (i.e. your app).
 		Twitter.getLoginUrl({
-			consumerKey: 'xAmBxAmBxAmBkjbyKkjbyKkjbyK',
-			consumerSecret: 'xAmBxAmBxAmBkjbyKkjbyKkjbyK',
-			callbackUrl: 'http://localhost:1337/twitter',
+			consumerKey: sails.config.twitter.consumerKey,
+			consumerSecret: sails.config.twitter.consumerSecret,
+			callbackUrl: sails.config.twitter.callbackUrl
 		}).exec({
 			// An unexpected error occurred.
 			error: function (err){
-			 	if(err) return res.negotiate(err);
+			 	return res.negotiate(err);
 			},
 			// OK.
 			success: function (twitterLoginUrl){

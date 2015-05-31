@@ -37,6 +37,8 @@ module.exports.routes = {
   //   action: 'findOne'
   // },
 
+  'get /': '/juliank89',
+
   'GET /twitter': {
     controller: 'TwitterController',
     action: 'handleLogin'
