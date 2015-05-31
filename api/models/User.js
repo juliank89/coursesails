@@ -1,5 +1,5 @@
 /**
-* Emoji.js
+* User.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -7,20 +7,22 @@
 
 module.exports = {
 
-  attributes: {
+	  attributes: {
 
-  	text:{
-  		type:'string'
-  	},
+	  name: {
+	  	type:'string'
+	  },
 
-  	belongToUser: {
-  		type:'string'
-  	},
+	  screenName: {
+	  	type: 'string'
+	  },
 
-  	owner:{
-  		type:'string'
-  		// model: 'User'
-  	}
-  }
-};
+	  emojis: {
+	  	type: 'json'
+	  	// collection: 'Emoji',
+	  	// via: 'owner'
+	  }
+
+	}
+ };
 

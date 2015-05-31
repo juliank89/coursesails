@@ -32,9 +32,34 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
+  // 'GET /': {
+  //   controller: 'UserController',
+  //   action: 'findOne'
+  // },
+
+  'GET /twitter': {
+    controller: 'TwitterController',
+    action: 'handleLogin'
+  },
+
+  'GET /:screenName': {
+    controller: 'UserController',
+    action: 'findOne'
   }
+
+  // '/emoji/:id/takeover/': {
+  //   controller: 'EmojiController',
+  //   action: 'associateWithUser'
+  // }
+
+  //get /emoji
+  //post /emoji
+  //get /emoji/:id
+  //put /emoji/:id
+  //delete /emoji/:id
+
+
+
 
   /***************************************************************************
   *                                                                          *
