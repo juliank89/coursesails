@@ -37,6 +37,7 @@ module.exports = {
 						},
 						// OK.
 						success: function (result){
+							console.log(accessTokenMetadata.screenName)
 							req.session.me = accessTokenMetadata.screenName;
 							return res.ok();
 						 
