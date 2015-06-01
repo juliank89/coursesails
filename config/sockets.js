@@ -49,7 +49,7 @@ module.exports.sockets = {
   port: 10469,
   user: 'redistogo',
   pass: '58ce75a4838f79b794034e3aa08a6c8c',
-  db: 0
+  db: 'coursesailsjt'
 
 
 
